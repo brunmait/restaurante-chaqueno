@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-chaqueno {
+    @apply bg-chaqueno-600 hover:bg-chaqueno-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  .btn-golden {
+    @apply bg-golden-500 hover:bg-golden-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  .card-chaqueno {
+    @apply bg-white rounded-xl shadow-lg border border-chaqueno-100 overflow-hidden;
+  }
+  .sidebar-link {
+    @apply flex items-center px-4 py-3 text-chaqueno-700 hover:text-white hover:bg-chaqueno-600/20 transition-all duration-200 border-l-4 border-transparent hover:border-golden-500;
+  }
+  .sidebar-link.active {
+    @apply text-white bg-gradient-to-r from-chaqueno-600 to-chaqueno-700 border-golden-500 shadow-lg;
+  }
+}
